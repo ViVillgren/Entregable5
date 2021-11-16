@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43945014, g: 0.4877957, b: 0.56803215, a: 1}
+  m_IndirectSpecularColor: {r: 0.43944958, g: 0.48779535, b: 0.568031, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -463,7 +463,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1128951251}
   - component: {fileID: 1128951250}
-  - component: {fileID: 1128951252}
   m_Layer: 0
   m_Name: Spawn Manager
   m_TagString: Untagged
@@ -480,9 +479,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128951249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3968743a25f4c1a8c236a0dfd35a8c, type: 3}
+  m_Script: {fileID: 11500000, guid: c6b32179ae43669469c11696f26d4822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 7254713537057693292, guid: 9c3fbc80529cd44c78c43550ed341818, type: 3}
+  spawnPos: {x: 0, y: 0, z: 30}
+  randomY: 0
 --- !u!4 &1128951251
 Transform:
   m_ObjectHideFlags: 0
@@ -497,21 +499,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1128951252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128951249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264a2f5a1ad0d12489133da19fe83eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 7254713537057693292, guid: 9c3fbc80529cd44c78c43550ed341818, type: 3}
-  spawnPos: {x: 0, y: 0, z: 30}
-  randomY: 0
 --- !u!1 &1313498724
 GameObject:
   m_ObjectHideFlags: 0

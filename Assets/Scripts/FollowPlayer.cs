@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    // Aqui haremos que la camara siga al jugador con las distancias indicadas
     public GameObject player;
     private Vector3 offset = new Vector3(15, 2, 5);
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    // para que funcione el codigo de arriba
     void Update()
     {
         transform.position = player.transform.position + offset;
